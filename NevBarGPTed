@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navMenu {
+            font-family: 'Advent Pro', sans-serif;
+            padding: 8px;
+            text-align: center;
+            margin: 7px auto;
+            width: fit-content;
+        }
+
+        .navMenu a {
+            color: #D4D4C8;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 6px;
+        }
+
+        .navMenu img {
+            vertical-align: middle;
+        }
+
+        .background {
+            background-color: #1a1919;
+        }
+
+        .border {
+            border: 1px solid #cccccc;
+        }
+
+        .navMenu a:hover {
+            color: #d09c0b;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navMenu border background">
+        <!-- ... your links ... -->
+    </nav>
+
+    <script>
+        const links = {
+            'siteweb': "https://www.vhs-media.com",
+            'inbox': "https://mail.google.com/mail/u/1/?ogbl#inbox",
+            'planner': "https://calendar.google.com/calendar/u/1/r?pli=1",
+            'drive': "https://drive.google.com/drive/u/1/my-drive",
+            'odoo': "https://vhs-media.odoo.com/web#cids=1&action=menu",
+            'GPT': "https://chat.openai.com",
+            'Cohesive': "https://cohesive.so",
+            'Canva': "https://www.canva.com/fr_fr/logo/",
+            'Figma': "https://www.figma.com/",
+            'Headjack': "https://app.headjack.io/",
+            'Youtube': "https://www.youtube.com/@vhsmedia9038/featured",
+            'Github': "https://github.com/SybVHS"
+        };
+
+        function navigate(id) {
+            if (links[id]) {
+                window.open(links[id], '_blank', 'noopener,noreferrer').focus();
+            }
+        }
+    </script>
+</body>
+
+</html>
